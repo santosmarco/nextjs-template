@@ -1,0 +1,6 @@
+run = "pnpm run build && pnpm run start"
+entrypoint = "./dist/index.js"
+modules = ["nodejs-20"]
+
+[nix]
+channel = "stable-24_05"
