@@ -1,12 +1,14 @@
-import { type Config } from "drizzle-kit";
+import type { Config as DrizzleConfig } from "drizzle-kit";
 
 import { env } from "~/env";
 
-export default {
+const drizzleConfig = {
   schema: "./src/server/db/schema.ts",
   dialect: "postgresql",
   dbCredentials: {
     url: env.DATABASE_URL,
   },
   tablesFilter: ["workspace_*"],
-} satisfies Config;
+} satisfies DrizzleConfig;
+
+export default drizzleConfig;
