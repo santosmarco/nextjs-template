@@ -56,3 +56,5 @@ yarn-error.log*
 # Replit
 .replit
 replit.nix
+temp_auto_push.bat
+temp_interactive_push.bat
